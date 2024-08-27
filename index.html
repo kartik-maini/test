@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Maps Directions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="floating-panel">
+        <input type="text" id="address" placeholder="Enter destination address">
+        <select id="mode">
+            <option value="DRIVING">Driving</option>
+            <option value="BICYCLING">Bicycling</option>
+            <option value="TRANSIT">Transit</option>
+            <option value="WALKING">Walking</option>
+        </select>
+        <button id="directions-btn">Get Directions</button>
+        <button id="clear-btn">Clear</button>
+    </div>
+    <div id="map"></div>
+    <div id="response-container">
+        <div id="response"></div>
+    </div>
+    <!-- <script src="get_directions.js"></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUDOwcI7J3_afn6qkcw1WS9AAqtUJ8ShU&libraries=places&callback=initMap" defer></script>
+    <script src="script.js"></script>
+</body>
+</html>
